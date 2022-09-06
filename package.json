@@ -3,6 +3,11 @@
   "displayName": "my-first-extension",
   "description": "Display a message",
   "version": "0.0.1",
+  "publisher": "orojas",
+  "repository": { 
+    "type": "git", 
+    "url": "https://github.com/orojasm/my-first-extension.git" 
+  }, 
   "engines": {
     "vscode": "^1.71.0"
   },
@@ -24,7 +29,10 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "npm run lint",
-    "test": "node ./test/runTest.js"
+    "test": "node ./test/runTest.js",
+    "remote": "git remote add origin https://github.com/orojasm/my-first-extension.git",
+    "branch": "git branch -M main",
+    "push": "git push -u origin main"
   },
   "devDependencies": {
     "@types/vscode": "^1.71.0",
