@@ -24,7 +24,14 @@
         "command": "my-first-extension.helloWorld",
         "title": "Hello World"
       }
-    ]
+    ],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "my-first-extension.helloWorld"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
